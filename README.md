@@ -1,15 +1,15 @@
-# 🍅 Pomodoro Timer
+# Pomodoro Timer
 
 A simple golang pomodoro cli :) 
 
 ## Features
 
-- 🎯 **Full-screen terminal UI** with centered layout
-- 🎨 **Visual progress bar** (green → red as time runs out)
-- ⏱️ **Automatic work/break session switching**
-- 🎛️ **Customizable work and break durations**
-- ⌨️ **Simple keyboard controls**
-- 📱 **Responsive design** that adapts to terminal size
+- **Full-screen terminal UI** with centered layout
+- **Visual progress bar** (green → red as time runs out)
+- **Automatic work/break session switching**
+- **Customizable work and break durations**
+- **Simple keyboard controls**
+- **Responsive design** that adapts to terminal size
 
 ## Installation
 
@@ -112,11 +112,6 @@ make build
 3. **Sound notification** plays when session completes
 4. **Automatically switches** between work and break sessions
 5. **Press R** to reset back to work session anytime
-
-## Platform Support
-
-- **Linux** - Tries paplay, aplay, or speaker-test
-- **Other** - Terminal bell character fallback
 
 ## Requirements
 
