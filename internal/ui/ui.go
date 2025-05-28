@@ -44,7 +44,7 @@ func (m *Model) Init() tea.Cmd {
 		tickCmd(),
 		tea.EnterAltScreen,
 		func() tea.Msg {
-			fmt.Printf("\033]0;%s\007", "🍅 Pomodoro Timer")
+			fmt.Printf("\033]0;%s\007", "Pomodoro Timer")
 			return nil
 		},
 	)
@@ -95,10 +95,10 @@ func (m *Model) View() string {
 	sessionType := m.timer.SessionType()
 	if sessionType == timer.Work {
 		title = "Work Session"
-		emoji = "🍅"
+		emoji = "💻"
 	} else {
 		title = "Break Time"
-		emoji = "☕"
+		emoji = "🚬"
 	}
 
 	// Get timer state
@@ -161,7 +161,7 @@ Press H for help`,
 
 // render of the help screen
 func (m *Model) helpView() string {
-	helpContent := `🍅 POMODORO TIMER - COMMANDS
+	helpContent := `POMODORO TIMER - COMMANDS
 
 					SPACE     Start/Pause timer
 					R         Reset to work session
