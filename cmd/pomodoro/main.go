@@ -20,7 +20,7 @@ var (
 
 func main() {
 	flag.Usage = func() {
-		fmt.Fprintf(os.Stderr, "🍅 Pomodoro Timer\n\n")
+		fmt.Fprintf(os.Stderr, "Pomodoro Timer\n\n")
 		fmt.Fprintf(os.Stderr, "Usage: %s [OPTIONS]\n\n", os.Args[0])
 		fmt.Fprintf(os.Stderr, "Options:\n")
 		flag.PrintDefaults()
